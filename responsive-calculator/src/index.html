@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!---
+    ----meta name="viewport" content="width-device-width,initial-scale-1.0"---->
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Calculator</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 style="padding-bottom: 40px;color:orange;text-shadow: 10px  5px 15px rgba(29, 230, 230, 0.61), 10px 5px 10px blue, 5px 1px 5px darkblue;">CALCULATOR MADE WITH <span _ngcontent-isb-c0="">❤️</span> BY SHRESHTHA</h1>
+
+		<div class="calc">
+			<div class="calc1">
+				<input type="text" name="screen" id="screen">
+				<table>
+					<tr>
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'0')"><b>0</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'1')"><b>1</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'2')"><b>2</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'3')"><b>3</b></button>
+						</td>
+
+						<td><button id="q" title="Addition" onclick="addChar(document.getElementById('screen'),'+')"><b>+</b></button></td>
+
+						<td><button id="q" title="Substraction" onclick="addChar(document.getElementById('screen'),'-')"><b>-</b></button></td>
+
+						<td><button id="q" title="Multiplication" onclick=" addChar(document.getElementById('screen'),'×') "><b>×</b></button></td>
+
+					</tr>
+
+					<tr>
+						<td><button onclick="deleteChar(document.getElementById('screen'))"><b>clear</b></button></td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'4')"><b>4</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'5')"><b>5</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'6')"><b>6</b></button>
+						</td>
+
+						<td><button id="q" title="Division" onclick=" addChar(document.getElementById('screen'),'/') ">
+								<b> / </b> </button> </td>
+
+						<td><button title="Remainder" onclick="modulo(document.getElementById('screen'))"> <b> %(modulo)
+								</b> </button> </td>
+
+						<td><button title="Factorial" onclick="if(checkNum(document.getElementById('screen').value)) { document.getElementById('screen').value=fact(document.getElementById('screen')) }"><b>!(factorial)</b></button>
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td><button id="q" title="Answer" onclick="if(checkNum(document.getElementById('screen').value)) { compute(document.getElementById('screen'))}"><b>=</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'7')"><b>7</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'8')"><b>8</b></button>
+						</td>
+
+						<td><button id="q" onclick="addChar(document.getElementById('screen'),'9')"><b>9</b></button>
+						</td>
+
+						<td><button onclick="if(checkNum(document.getElementById('screen').value)) { exp(document.getElementById('screen')) }"><b>^
+									exponential</b></button></td>
+
+						<td><button title="Square Root" onclick="if(checkNum(document.getElementById('screen').value)) { sqrt(document.getElementById('screen')) }"><b>√(Sqrt)</b></button>
+						</td>
+
+						<td><button title="Prime Number" onclick="if(checkNum(document.getElementById('screen').value)) { isprime(document.getElementById('screen')) }"><b>N"(prime
+									no.)</b></button></td>
+
+					</tr>
+
+				</table>
+				<div>
+					<button type="button" id="q" class="btnTop" name="btnTop" value="Clear complete" onclick="document.getElementById('screen').value=0"><b>Clear Complete</b></button>
+					<button type="button" id="q" class="btnTop1" name="btnTop" value="Clear complete" onclick="if(checkNum(document.getElementById('screen').value)) { square(document.getElementById('screen')) }"><b>x<sup>y</sup>(power)</b></button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
